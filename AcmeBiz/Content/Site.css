@@ -1,0 +1,137 @@
+﻿body {
+    font-size: 16px;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for carousel
+-----------------------------------------------------------*/
+
+.carousel {
+    height: 600px;
+    background: #222 url(../images/1920x1200_purple.jpg) no-repeat center center;
+    background-size: auto;
+    background-clip:border-box;
+    padding: 50px 0px;
+}
+.carousel-inner {
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+
+.carousel .item {
+    height: 500px;
+    text-align: center;
+}
+.carousel-image {
+    text-align: center;
+    height: 250px;
+    padding: 10px 0px;
+    line-height: 250px;
+}
+
+.carousel-image  img {
+    height: 100%;
+}
+.carousel-caption {
+    /*position: static;
+    bottom: 30px;
+    padding: 20px 150px ;*/
+}
+
+.list-image {
+    height: 100px;
+}
+
+/* Custom Styles 
+-----------------------------------------------------------*/
+h3 {
+    padding: 1.5em 0em 1.2em;
+    color: #808080;
+}
+
+#page-nav {
+    margin-bottom: 50px;
+}
+
+.item-name {
+    font-weight: bold;
+    font-family: Garamond, sans-serif;
+    font-size: 1em;
+    margin-bottom: .5em;
+    line-height: 1em;
+    background-color: #4f345f;
+    color: #fff;
+   
+}
+
+.item-name, .list-details, .list-footer {
+    padding: 5px;
+}

@@ -1,0 +1,97 @@
+﻿@model HomeViewModel
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using System.Web.Mvc;
+@using Common;
+@using Northwind;
+@using AcmeBiz.BL;
+@using AcmeBiz.ViewModel;
+@using Northwind.ViewModel;
+
+@section scripts {
+
+}
+@*<header id="page-header">
+    <h1 class="page-header">Welcome to Acme Biz</h1>
+</header>*@<!-- /.page-header -->
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            
+            
+            <div class="container text-center">
+                <div class="carousel-image">
+                    <img src="~/images/Enterprise.png" alt="Enterprise" />
+                </div>
+                <div class="carousel-caption">
+                    <h1>Acme Biz</h1>
+                    <p class="hidden-xs hidden-sm">Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+
+            
+            <div class="container">
+                <div class="carousel-image">
+                    <img src="~/images/Automation.png" alt="automation" />
+                </div>                
+                <div class="carousel-caption">
+                    <h1>Best Quality Products</h1>
+                    <p class="hidden-xs hidden-sm">
+                        Aliquam sit amet gravida nibh, facilisis gravida… Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more about us</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+             <div class="container">
+                 <div class="carousel-image">
+                     <img src="~/images/User.png" alt="User" />
+                 </div>                 
+                <div class="carousel-caption">
+                    <h1>Inquiries</h1>
+                    <p class="hidden-xs hidden-sm"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Contact Us</a></p>
+                </div>              
+            </div>
+        </div>
+    </div><!-- /.carousel-inner -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+
+
+
+
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <h3>New Products</h3>
+        @Html.Partial("PartialListItem", Model.NewProductsList)
+    </div>
+
+
+    <div class="col-sm-6 col-md-4">
+        <h3>Top Seller Products</h3>
+        @Html.Partial("PartialListItem", Model.TopSellerProductsList)
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+        <h3>Featured Products</h3>
+        @Html.Partial("PartialListItem", Model.FeaturedProductsList)
+    </div>
+
+ 
+</div>
